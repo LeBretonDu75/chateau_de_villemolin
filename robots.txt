@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://lebretondu75.github.io/chateau_de_villemolin/sitemap.xml
+Sitemap: https://chateau-villemolin.github.io/chateau_de_villemolin/sitemap.xml
