@@ -28,10 +28,21 @@
   --or:#c2a46a;
   --vert:#2d3a2e;
 }
+.visites-intro{
+  display:grid;
+  grid-template-columns:1fr 420px;
+  align-items:center;
+  gap:50px;
+  margin-bottom:50px;
+}
+
+.visites-text h2{
+  margin-bottom:0;
+}
+
 .visites-hero{
-  width:45%;
-  height:auto;
-  margin:10px 0 40px auto;
+  width:100%;
+  margin:0;
   border-radius:4px;
   overflow:hidden;
   box-shadow:16px 16px 0 var(--or);
@@ -42,6 +53,7 @@
   height:auto;
   display:block;
 }
+
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Inter',sans-serif;background:var(--beige);color:var(--noir);line-height:1.7}
 h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:700;letter-spacing:.02em}
