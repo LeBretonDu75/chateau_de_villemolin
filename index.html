@@ -120,9 +120,35 @@ main{padding-top:84px}
 .btn:hover{background:var(--vert)}
 footer{padding:40px 6vw;border-top:1px solid rgba(0,0,0,.08);font-size:13px;opacity:.6;display:flex;justify-content:space-between}
 @media(max-width:900px){
-  header{padding:12px 18px} nav a{margin-left:12px;font-size:11px}
-  .hero{grid-template-columns:1fr}.hero-image{height:50vh}
-  .grid2{grid-template-columns:1fr}
+  header{
+    padding:12px 18px;
+  }
+
+  nav a{
+    margin-left:12px;
+    font-size:11px;
+  }
+
+  .hero{
+    min-height:auto;
+    grid-template-columns:1fr;
+    grid-template-areas:
+      "image"
+      "content";
+    padding:30px 6vw 60px;
+    gap:35px;
+  }
+
+  .hero-image{
+    height:58vh;
+    min-height:420px;
+    width:100%;
+    box-shadow:14px 14px 0 var(--or);
+  }
+
+  .grid2{
+    grid-template-columns:1fr;
+  }
 }
 </style>
 </head>
