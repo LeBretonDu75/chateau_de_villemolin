@@ -59,8 +59,30 @@ main{padding-top:84px}
 
 /* HERO */
 .hero{
-  min-height:82vh;display:grid;grid-template-columns:1.2fr .8fr;
-  align-items:center;padding:40px 6vw;gap:40px;
+  min-height:82vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:"content image";
+  align-items:center;
+  padding:40px 6vw;
+  gap:50px;
+}
+
+.hero > div:first-child{
+  grid-area:content;
+}
+
+.hero-image{
+  grid-area:image;
+  background:#ddd;
+  height:68vh;
+  min-height:520px;
+  border-radius:4px;
+  position:relative;
+  overflow:hidden;
+  background-size:cover;
+  background-position:center;
+  box-shadow:20px 20px 0 var(--or);
 }
 .hero h1{font-size:clamp(42px,6vw,78px);line-height:.9;margin-bottom:18px}
 .hero h1 i{font-style:italic;font-weight:400;color:var(--vert)}
@@ -124,6 +146,7 @@ footer{padding:40px 6vw;border-top:1px solid rgba(0,0,0,.08);font-size:13px;opac
 <!-- PAGE 1 ACCUEIL -->
 <section id="p-accueil" class="page active">
   <div class="hero">
+
     <div>
       <span class="tag">Anthien - Nièvre - Monument Historique depuis 1978 & 2002</span>
       <h1>Château de Villemolin</h1>
@@ -131,11 +154,15 @@ footer{padding:40px 6vw;border-top:1px solid rgba(0,0,0,.08);font-size:13px;opac
       <p class="lead">Construit au XIVe siècle sur l’emplacement d’une villa gallo-romaine, la Villa Molini, le château de Villemolin est en forme de fer à cheval, flanqué de trois tours. Il est occupé depuis près de cinq siècles par la famille de Certaines.</p>
       <a class="btn" href="#" onclick="go('contact')">Organiser une visite</a>
       <p style="margin-top:22px;font-size:13px;opacity:.6">Ouvert juillet et août, tous les jours sauf samedi, 14h-18h. Groupes toute l'année sur RDV.</p>
-      <div class="hero-image" style="background-image: url('chateau_villemolin.jpg.jpg'); background-size: cover; background-position: center;">
-  <div class="badge">© Château de Villemolin - Anthien (58)</div>
+    </div>
+
+    <div class="hero-image" style="background-image: url('chateau_villemolin.jpg.jpg'); background-size: cover; background-position: center;">
+      <div class="badge">© Château de Villemolin - Anthien (58)</div>
       <div class="badge">© Château de Villemolin - Anthien (58)</div>
     </div>
+
   </div>
+
   <div class="section" style="background:white">
     <div class="grid2">
       <div class="card">
@@ -143,6 +170,7 @@ footer{padding:40px 6vw;border-top:1px solid rgba(0,0,0,.08);font-size:13px;opac
         <h3>Une famille, 7 siècles de transmission</h3>
         <p>Propriété initiale de la Famille de la Corcelle, puis Champignolle et Bascoing, le château entre en 1538 dans la famille de Certaines par le mariage de Barbe de Bascoing avec Etienne de Certaines. Il n’a jamais été vendu.</p>
       </div>
+
       <div class="card">
         <span class="tag">Architecture</span>
         <h3>XVe, XVIIe, XIXe siècles</h3>
