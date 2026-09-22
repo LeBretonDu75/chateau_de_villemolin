@@ -199,34 +199,64 @@ footer{padding:40px 6vw;border-top:1px solid rgba(0,0,0,.08);font-size:13px;opac
     grid-template-columns:1fr;
   }
 }
-/* IMAGE RO ULETABILLE - PAGE EVENTS */
+/* PAGE EVENTS */
 
 .events-hero-image {
   width: 100%;
-  margin-bottom: 30px;
+  max-width: 950px;
+  margin: 0 auto 45px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 6px;
+  box-shadow: 16px 16px 0 var(--or);
 }
 
 .events-hero-image img {
-  width: 100%;
-  height: 500px;
   display: block;
-  object-fit: cover;
-  object-position: center;
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: contain;
 }
 
-/* Tablettes et iPad */
-@media (max-width: 999px) {
-  .events-hero-image img {
-    height: 400px;
+/* Organisation des cartes */
+.events-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.events-cards .card {
+  height: 100%;
+}
+
+.events-film {
+  margin-top: 30px;
+}
+
+/* Tablettes */
+@media (max-width: 900px) {
+  .events-hero-image {
+    width: 100%;
+    margin-bottom: 35px;
+    box-shadow: 10px 10px 0 var(--or);
+  }
+
+  .events-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 
 /* Téléphones */
 @media (max-width: 599px) {
+  .events-hero-image {
+    box-shadow: 7px 7px 0 var(--or);
+    border-radius: 4px;
+  }
+
   .events-hero-image img {
-    height: 300px;
+    max-height: none;
   }
 }
 </style>
@@ -370,30 +400,47 @@ footer{padding:40px 6vw;border-top:1px solid rgba(0,0,0,.08);font-size:13px;opac
     </div>
 
     <span class="tag">Privatisation</span>
+
     <h2 style="font-size:54px">Expositions, séminaires, tournages</h2>
-    <p style="max-width:700px;margin:12px 0 30px">Possibilités variées d’organisation d’expositions, de présentations commerciales, de photos publicitaires, de tournages de films etc.</p>
 
-    <div class="grid2">
+    <p style="max-width:700px;margin:12px 0 30px">
+      Possibilités variées d’organisation d’expositions, de présentations commerciales, de photos publicitaires, de tournages de films etc.
+    </p>
+
+    <div class="events-cards">
+
       <div class="card">
-        <div class="grid2" style="margin-top:30px">
-          <div class="card">
-            <h3>Location de l’Orangerie</h3>
-            <p>L'Orangerie avec tout le matériel pour organiser vos réceptions, expositions, présentations commerciales ou amicales.</p>
-            <a class="btn" href="#" onclick="go('contact')">Demander un devis</a>
-          </div>
+        <h3>Location de l’Orangerie</h3>
 
-          <div class="card">
-            <h3>Photos & Films</h3>
-            <p>Cadre authentique préservé, parc, intérieurs meublés. Idéal pour shootings publicitaires, clips, longs-métrages. Accès logistique facilité.</p>
-          </div>
-        </div>
+        <p>
+          L'Orangerie avec tout le matériel pour organiser vos réceptions, expositions, présentations commerciales ou amicales.
+        </p>
 
-        <div class="card card-full">
-          <h3>Tournage Bruno Podalydès (2002)</h3>
-          <p>Le Château de Villemolin a servi de décor principal pour <b>Le Mystère de la Chambre Jaune</b>. Des éléments de décor du film sont toujours accessibles aux visiteurs : locaux, costumes et accessoires.</p>
-          <p style="margin-top:10px;font-size:13px;opacity:.7">Avec Denis Podalydès dans le rôle de Rouletabille. Souvenirs visibles lors de la visite guidée.</p>
-        </div>
+        <a class="btn" href="#" onclick="go('contact')">
+          Demander un devis
+        </a>
       </div>
+
+      <div class="card">
+        <h3>Photos & Films</h3>
+
+        <p>
+          Cadre authentique préservé, parc, intérieurs meublés. Idéal pour shootings publicitaires, clips, longs-métrages. Accès logistique facilité.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="card events-film">
+      <h3>Tournage Bruno Podalydès (2002)</h3>
+
+      <p>
+        Le Château de Villemolin a servi de décor principal pour <b>Le Mystère de la Chambre Jaune</b>. Des éléments de décor du film sont toujours accessibles aux visiteurs : locaux, costumes et accessoires.
+      </p>
+
+      <p style="margin-top:10px;font-size:13px;opacity:.7">
+        Avec Denis Podalydès dans le rôle de Rouletabille. Souvenirs visibles lors de la visite guidée.
+      </p>
     </div>
 
   </div>
