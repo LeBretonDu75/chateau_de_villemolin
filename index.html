@@ -237,6 +237,48 @@ footer{padding:40px 6vw;border-top:1px solid rgba(0,0,0,.08);font-size:13px;opac
     margin-bottom: 30px;
   }
 }
+/* =========================================
+   ORGANISATION DES BLOCS DE LA PAGE EVENTS
+   ========================================= */
+
+.events-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Les deux premiers blocs */
+.events-cards .card {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Le troisième bloc : pleine largeur */
+.events-film {
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* Tablettes et téléphones */
+@media (max-width: 700px) {
+
+  .events-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .events-cards .card {
+    min-height: auto;
+  }
+
+  .events-film {
+    margin-top: 20px;
+  }
+
+}
 </style>
 </head>
 <body>
