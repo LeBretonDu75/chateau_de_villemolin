@@ -199,64 +199,42 @@ footer{padding:40px 6vw;border-top:1px solid rgba(0,0,0,.08);font-size:13px;opac
     grid-template-columns:1fr;
   }
 }
-/* PAGE EVENTS */
+/* IMAGE ROULETABILLE - PAGE EVENTS */
 
 .events-hero-image {
   width: 100%;
-  max-width: 950px;
+  max-width: 850px;
   margin: 0 auto 45px;
   overflow: hidden;
-  border-radius: 6px;
-  box-shadow: 16px 16px 0 var(--or);
+  border: 8px solid var(--or);
+  border-radius: 4px;
+  box-shadow: none;
 }
 
 .events-hero-image img {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 520px;
   object-fit: contain;
 }
 
-/* Organisation des cartes */
-.events-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-top: 30px;
-}
 
-.events-cards .card {
-  height: 100%;
-}
-
-.events-film {
-  margin-top: 30px;
-}
-
-/* Tablettes */
+/* Tablettes et iPad */
 @media (max-width: 900px) {
   .events-hero-image {
-    width: 100%;
+    max-width: 750px;
+    border-width: 6px;
     margin-bottom: 35px;
-    box-shadow: 10px 10px 0 var(--or);
-  }
-
-  .events-cards {
-    grid-template-columns: 1fr;
-    gap: 20px;
   }
 }
+
 
 /* Téléphones */
 @media (max-width: 599px) {
   .events-hero-image {
-    box-shadow: 7px 7px 0 var(--or);
-    border-radius: 4px;
-  }
-
-  .events-hero-image img {
-    max-height: none;
+    width: 100%;
+    border-width: 5px;
+    margin-bottom: 30px;
   }
 }
 </style>
