@@ -199,6 +199,36 @@ footer{padding:40px 6vw;border-top:1px solid rgba(0,0,0,.08);font-size:13px;opac
     grid-template-columns:1fr;
   }
 }
+/* IMAGE RO ULETABILLE - PAGE EVENTS */
+
+.events-hero-image {
+  width: 100%;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.events-hero-image img {
+  width: 100%;
+  height: 500px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Tablettes et iPad */
+@media (max-width: 999px) {
+  .events-hero-image img {
+    height: 400px;
+  }
+}
+
+/* Téléphones */
+@media (max-width: 599px) {
+  .events-hero-image img {
+    height: 300px;
+  }
+}
 </style>
 </head>
 <body>
