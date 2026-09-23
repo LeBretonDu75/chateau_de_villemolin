@@ -285,6 +285,113 @@ footer{padding:40px 6vw;border-top:1px solid rgba(0,0,0,.08);font-size:13px;opac
   display: inline-block;
   padding: 12px 24px;
 }
+/* =========================================================
+   SEO / ACCESSIBILITÉ / PERFORMANCE VISUELLE
+   Château de Villemolin
+   ========================================================= */
+
+/* Texte lisible et structure claire pour les visiteurs */
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Les titres principaux doivent rester très visibles */
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+/* Améliore la lisibilité des paragraphes */
+p,
+li {
+  max-width: 75ch;
+}
+
+/* Les liens sont clairement identifiables */
+a {
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--or);
+  outline-offset: 4px;
+}
+
+/* Images : éviter les débordements */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Images de contenu : rendu propre */
+.visites-hero img,
+.events-hero-image img {
+  object-fit: cover;
+}
+
+/* =========================================================
+   MOTS-CLÉS LOCAUX VISIBLES
+   ========================================================= */
+
+.local-seo {
+  margin-top: 18px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.local-seo strong {
+  color: var(--vert);
+}
+
+/* =========================================================
+   CONTENU IMPORTANT : meilleure lisibilité mobile
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  h1 {
+    font-size: clamp(40px, 12vw, 58px);
+    line-height: .95;
+  }
+
+  h2 {
+    line-height: 1.05;
+  }
+
+  .section {
+    padding: 60px 6vw;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .hero p.lead {
+    font-size: 16px;
+  }
+
+}
+
+/* =========================================================
+   RÉDUCTION DES MOUVEMENTS
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+}
 </style>
 </head>
 <body>
