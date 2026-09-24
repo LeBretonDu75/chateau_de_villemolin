@@ -1,1 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta name="google-site-verification" content="oKOmNSbJKvPWkQVw8lUYvXL9o8fWaxOPHV-QVlaN-K0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Château de Villemolin à Anthien (Nièvre) | Visite, histoire et patrimoine</title>
+  <meta name="description" content="Site officiel du chateau de Villemolin: Découvrez le Château de Villemolin à Anthien, dans la Nièvre. Château historique familial depuis 1538, Monument Historique, visites guidées en juillet et août, patrimoine du Morvan près de Vézelay.">
+<link rel="canonical" href="https://chateau-villemolin.github.io/chateau_de_villemolin/" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://chateau-villemolin.github.io/chateau_de_villemolin/#business",
+  "name": "Château de Villemolin",
+  "alternateName": [
+    "Château de Villemolin à Anthien",
+    "Château Villemolin"
+  ],
+  "description": "Château historique situé à Anthien dans la Nièvre, demeure familiale depuis 1538 et monument historique. Visites guidées en juillet et août et visites de groupes sur rendez-vous.",
+  "url": "https://chateau-villemolin.github.io/chateau_de_villemolin/",
+  "telephone": "+33673197832",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "6, rue du Château de Villemolin",
+    "postalCode": "58800",
+    "addressLocality": "Anthien",
+    "addressRegion": "Bourgogne-Franche-Comté",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.28722,
+    "longitude": 3.71972
+  },
+  "image": [
+    "https://chateau-villemolin.github.io/chateau_de_villemolin/chateau_villemolin.jpg.jpg",
+    "https://chateau-villemolin.github.io/chateau_de_villemolin/visites-villemolin.jpg",
+    "https://chateau-villemolin.github.io/chateau_de_villemolin/rouletabille.jpg"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "14:00",
+      "closes": "18:00"
+    }
+  ]
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --beige:#f6f1e8;
+  --noir:#1a1a1a;
+  --or:#c2a46a;
+  --vert:#2d3a2e;
+}
+.visites-intro{
+  display:grid;
+  grid-template-columns:1fr 420px;
+  align-items:center;
+  gap:50px;
+  margin-bottom:50px;
+}
 
+.visites-text h2{
+  margin-bottom:0;
+}
+
+.visites-intro{
+  display:grid;
+  grid-template-columns:1fr 420px;
+  align-items:center;
+  gap:50px;
+  margin-bottom:50px;
+}
+
+.visites-text h2{
+  margin-bottom:0;
+}
+
+.visites-hero{
+  width:100%;
+  margin:0;
+  border-radius:4px;
+  overflow:hidden;
+  box-shadow:16px 16px 0 var(--or);
+}
+
+.visites-hero img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:var(--beige);color:var(--noir);line-height:1.7}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:700;letter-spacing:.02em}
+header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(246,241,232,.9);backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(0,0,0,.08);
+  display:flex;justify-content:space-between;align-items:center;
+  padding:14px 40px;
+}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--noir)}
+.logo-mark{
+  font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:700;
+  line-height:.8;position:relative;top:-2px;
+}
+.logo-mark span{color:var(--or)}
+.logo-text{font-family:'Cormorant Garamond',serif;text-transform:uppercase;letter-spacing:.2em;font-size:13px;line-height:1.1}
+.logo-text b{display:block;font-size:22px;letter-spacing:.05em}
+nav a{
+  margin-left:26px;text-decoration:none;color:var(--noir);
+  font-size:13px;text-transform:uppercase;letter-spacing:.15em;
+  opacity:.7;transition:.3s;
+}
+nav a.active, nav a:hover{opacity:1;border-bottom:1px solid var(--or)}
+main{padding-top:84px}
+.page{display:none;animation:fade .5s}
+.page.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* HERO */
+.hero{
+  min-height:82vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:"content image";
+  align-items:center;
+  padding:40px 6vw;
+  gap:50px;
+}
+
+.hero > div:first-child{
+  grid-area:content;
+}
+
+.hero-image{
+  grid-area:image;
+  background:#ddd;
+  height:68vh;
+  min-height:520px;
+  border-radius:4px;
+  position:relative;
+  overflow:hidden;
+  background-size:cover;
+  background-position:center;
+  box-shadow:20px 20px 0 var(--or);
+}
+.hero h1{font-size:clamp(42px,6vw,78px);line-height:.9;margin-bottom:18px}
+.hero h1 i{font-style:italic;font-weight:400;color:var(--vert)}
+.hero p.lead{font-size:18px;max-width:520px;opacity:.8}
+.hero-image{
+  background:#ddd;height:68vh;border-radius:4px;position:relative;overflow:hidden;
+  background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Ch%C3%A2teau_de_Villemolin.jpg/800px-Ch%C3%A2teau_de_Villemolin.jpg');
+  background-size:cover;background-position:center;
+  box-shadow:20px 20px 0 var(--or);
+}
+.badge{
+  position:absolute;bottom:18px;left:18px;background:var(--beige);
+  padding:10px 14px;font-size:12px;letter-spacing:.1em;text-transform:uppercase
+}
+
+/* SECTIONS */
+.section{padding:80px 6vw}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.card{background:white;padding:32px;border:1px solid rgba(0,0,0,.06)}
+  .card-full{
+  margin-top:40px;
+}
+.card h3{font-size:26px;margin-bottom:10px}
+.tag{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--or);margin-bottom:12px;display:block}
+.list{list-style:none}
+.list li{padding:8px 0;border-bottom:1px solid rgba(0,0,0,.06)}
+.list li:before{content:"— ";color:var(--or)}
+
+/* COORD */
+.map-wrap{height:420px;background:#e9e3d5;border:1px solid rgba(0,0,0,.1);display:grid;place-items:center}
+.btn{
+  display:inline-block;background:var(--noir);color:var(--beige);
+  padding:12px 24px;text-decoration:none;font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-top:18px
+}
+.btn:hover{background:var(--vert)}
+footer{padding:40px 6vw;border-top:1px solid rgba(0,0,0,.08);font-size:13px;opacity:.6;display:flex;justify-content:space-between}
+@media(max-width:900px){
+  header{
+    padding:12px 18px;
+  }
+  .visites-intro{
+  grid-template-columns:1fr;
+  gap:30px;
+  margin-bottom:40px;
+}
+
+.visites-hero{
+  width:85%;
+  margin:0 auto;
+  box-shadow:10px 10px 0 var(--or);
+}
+
+  nav a{
+    margin-left:12px;
+    font-size:11px;
+  }
+
+  .hero{
+    min-height:auto;
+    grid-template-columns:1fr;
+    grid-template-areas:
+      "image"
+      "content";
+    padding:30px 6vw 60px;
+    gap:35px;
+  }
+
+  .hero-image{
+    height:58vh;
+    min-height:420px;
+    width:100%;
+    box-shadow:14px 14px 0 var(--or);
+  }
+
+  .grid2{
+    grid-template-columns:1fr;
+  }
+}
+/* IMAGE ROULETABILLE - PAGE EVENTS */
+
+.events-hero-image {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto 45px;
+  overflow: hidden;
+  border: 8px solid var(--or);
+  border-radius: 4px;
+  box-shadow: none;
+  position: relative;
+}
+
+.events-hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* Tablettes et iPad */
+@media (max-width: 900px) {
+  .events-hero-image {
+    max-width: 750px;
+    border-width: 6px;
+    margin-bottom: 35px;
+  }
+}
+
+
+/* Téléphones */
+@media (max-width: 599px) {
+  .events-hero-image {
+    width: 100%;
+    border-width: 5px;
+    margin-bottom: 30px;
+  }
+}
+/* =========================================
+   ORGANISATION DES BLOCS DE LA PAGE EVENTS
+   ========================================= */
+
+.events-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Les deux premiers blocs */
+.events-cards .card {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Le troisième bloc : pleine largeur */
+.events-film {
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* Tablettes et téléphones */
+@media (max-width: 700px) {
+
+  .events-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .events-cards .card {
+    min-height: auto;
+  }
+
+  .events-film {
+    margin-top: 20px;
+  }
+
+}
+.events-cards .btn {
+  width: fit-content;
+  display: inline-block;
+  padding: 12px 24px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#" onclick="go('accueil')">
+    <div class="logo-mark">V</div>
+    <div class="logo-text">Château de<br><b>Villemolin</b></div>
+  </a>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="histoire.html">Histoire</a>
+<a href="visites.html">Visites</a>
+<a href="privatisations.html">Privatisations et Cinéma</a>
+<a href="contact.html">Coordonnées</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- PAGE 5 CONTACT = COORDONNEES -->
+<section id="p-contact" class="page">
+  <div class="section">
+    <span class="tag">Coordonnées</span>
+    <h2 style="font-size:54px;margin-bottom:30px">Venir à Villemolin</h2>
+    <div class="grid2">
+      <div>
+        <div class="card">
+          <h3>Adresse</h3>
+          <p><b>Château de Villemolin</b><br>6, rue du Château de Villemolin<br>58800 Anthien<br>Nièvre, Bourgogne-Franche-Comté, France</p>
+          <p style="margin-top:14px"><b>Téléphone :</b> 06 73 19 78 32 <br>
+          <b>GPS :</b> 47.28722, 3.71972<br>
+          <b>Coordonnées :</b> 47°17'14"N 3°43'11"E</p>
+          <p style="margin-top:14px;font-size:13px">Propriété privée habitée. Ouvert juillet-août sauf samedi 14h-18h, matin 10h-12h sur RDV. Groupes toute l'année.</p>
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Château+de+Villemolin+Anthien" target="_blank">Ouvrir dans Google Maps</a>
+        </div>
+        <div style="margin-top:20px" class="card">
+          <h3>Écrire</h3>
+          <form action="https://formsubmit.co/mariefrancedecertaines@orange.fr" method="POST" class="card">
+  <!-- Ne pas toucher à ces 2 lignes cachées -->
+  <input type="hidden" name="_subject" value="Nouvelle demande de visite - Chateau Villemolin">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://chateau-villemolin.github.io/chateau_de_villemolin/merci.html">
+
+  <input style="width:100%;padding:10px;margin:6px 0;border:1px solid #ccc;border-radius:6px" name="nom" placeholder="Votre nom" required>
+  <input style="width:100%;padding:10px;margin:6px 0;border:1px solid #ccc;border-radius:6px" name="email" placeholder="Votre email" type="email" required>
+  <textarea style="width:100%;padding:10px;margin:6px 0;border:1px solid #ccc;border-radius:6px;height:100px" name="message" placeholder="Votre demande de visite (dates, nombre de personnes...)" required></textarea>
+  <button class="btn" type="submit">Envoyer</button>
+</form>        
+      </div>
+      </div>
+      <div>
+        <div class="map-wrap">
+          <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
+          src="https://www.google.com/maps?q=Château+de+Villemolin+Anthien&z=15&output=embed"></iframe>
+        </div>
+        <div class="card" style="margin-top:20px">
+          <span class="tag">Infos pratiques</span>
+          <ul class="list">
+            <li>Entre Corbigny et Vézelay - 30km d'Avallon</li>
+            <li>Parking visiteurs devant le portail</li>
+            <li>Accès PMR (prévenir avant)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <span>© 2026 Château de Villemolin - Famille de Certaines - Inscrit MH 1978 / 2002</span>
+</footer>
+
+<script>
+function go(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));
+  document.getElementById('p-'+id).classList.add('active');
+  document.getElementById('n-'+id).classList.add('active');
+  window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>
